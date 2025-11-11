@@ -131,7 +131,7 @@ import {
   CONTACT_US_EMAIL_TEMPLATE_COPY_TO_USER,
 } from "./emailTemplates.js";
 
-import { brevoClient, sender, adminEmail } from "./brevo.config.js";
+import { brevoClient, sender, adminEmail } from "./nodemailer.config.js";
 
 // Generic function to send transactional emails
 async function sendBrevoEmail({ to, subject, htmlContent, category }) {
